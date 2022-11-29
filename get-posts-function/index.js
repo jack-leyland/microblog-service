@@ -14,7 +14,7 @@ export const handler = (event) => {
         ":status": {S:"OK"}
         },
         Limit: parseInt(event.queryStringParameters.pageSize),
-        ScanIndexForward: true,
+        ScanIndexForward: false,
     }
     if (event.queryStringParameters.last) {
       let postId = event.queryStringParameters.id;
